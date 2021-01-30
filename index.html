@@ -113,6 +113,7 @@
 
             <!--Thank You-->
 
+
             <script>
                 function handleTicketChange(ticket, increasing) {
                     const ticketInput = document.getElementById(ticket + "-count");
@@ -168,9 +169,11 @@
                     return ticketCount;
                 }
                 document.getElementById("book-now").addEventListener("click", function() {
-                    alert("Flight Booking Successfully");
+                    // alert("Flight Booking Successfully");
+                    swal("Successfully!", "You have bought Flight Ticket!", "success", {});
                 })
             </script>
+            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 
 </html>
